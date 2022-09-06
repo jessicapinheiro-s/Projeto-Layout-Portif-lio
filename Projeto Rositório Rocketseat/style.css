@@ -68,17 +68,24 @@ body{
     padding: 30px;
 }
 .card-tecnologies{
+    width: 100%;
+    justify-content: space-around;
     background-color: var(--bg-cards);
 }
 .tecnologies{
-    display: flex;
-    justify-content: space-around;
+    border-radius: 10px;
+    padding: 15px;
+}
+.tecnologies p{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #144372;
+    width: 30%;
+    margin: 0 5px 0 5px;
 }
 .tecnologies div{
-    background-color: var(--bg-techs);
-    padding: 5px;
-    border-radius: 10px;
-    width: 20%;
+    display: flex;
+    margin: 5px 0 10px;
 }
 .menu ul li{
     list-style: none;
