@@ -1,0 +1,123 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+body{
+    font-size: 0.950rem;
+    width: 100%;
+    background-color: var(--body-bg-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+}
+.conteiner-principal{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 360px 1fr ;
+    grid-template-areas: 
+    'left-bar all-content'
+    'left-bar all-content'
+    'left-bar all-content'
+    ;
+    grid-template-rows: 300px, 500px, 200px;
+}
+.card-perfil, .card-side-menu, .card-tecnologies{
+    background-color: var(--bg-cards);
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.card-side-menu .menu{
+    padding: 15px;
+}
+.card-perfil div{
+    text-align: center;
+    padding: 30px;
+}
+.card-perfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 3px #144372;
+}
+.card-myprojects{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}   
+.card-myprojects, .recent-posts{
+    margin-bottom: 20px;
+    background-color: var(--bg-cards);
+    border-radius: 10px;
+}
+.left-bar{
+    grid-area: 'left-bar';
+    height: 100vh;
+    padding: 30px;
+}
+.all-content{
+    grid-area: 'all-content';
+    padding: 30px;
+}
+.card-tecnologies{
+    background-color: var(--bg-cards);
+}
+.tecnologies{
+    display: flex;
+    justify-content: space-around;
+}
+.tecnologies div{
+    background-color: var(--bg-techs);
+    padding: 5px;
+    border-radius: 10px;
+    width: 20%;
+}
+.menu ul li{
+    list-style: none;
+    padding: 10px;
+    margin: 10px 0 10px;
+    border-radius: 10px;
+}
+.menu ul li:hover{
+    background-color: #144372;
+}
+.card-repositories div{
+    background-color: var(--bg-cards);
+    width: 45%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card-repositories div h2{
+    font-size: 1.150rem;
+}
+.card-repositories{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.recent-posts{
+    padding: 20px;
+}
+.card-sobre-mim{
+    background-color: var(--bg-cards);
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+.card-sobre-mim  div img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.card-sobre-mim div{
+    margin-right: 20px;
+}
