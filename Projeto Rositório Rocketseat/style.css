@@ -2,7 +2,7 @@
     --body-bg-color: #22212C;
     --text-color: #837E9F;
     --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
+    --bg-techs: #69da46;
 }
 *{
     margin: 0;
@@ -29,10 +29,17 @@ body{
     ;
     grid-template-rows: 300px, 500px, 200px;
 }
+.left-bar{
+    grid-area: 'left-bar';
+    height: 100vh;
+    padding: 30px;
+}
+.all-content{
+    grid-area: 'all-content';
+    padding: 30px;
+}
 .card-perfil, .card-side-menu, .card-tecnologies{
-    background-color: var(--bg-cards);
     width: 100%;
-    border-radius: 8px;
     margin-bottom: 20px;
 }
 .card-side-menu .menu{
@@ -46,7 +53,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: solid 3px #144372;
+    border: solid 3px var(--bg-techs);
 }
 .card-myprojects{
     display: flex;
@@ -55,22 +62,15 @@ body{
 }   
 .card-myprojects, .recent-posts{
     margin-bottom: 20px;
+}
+
+.card-tecnologies,.card-myprojects, .recent-posts, .card-sobre-mim, .card-perfil, .card-side-menu{
     background-color: var(--bg-cards);
     border-radius: 10px;
-}
-.left-bar{
-    grid-area: 'left-bar';
-    height: 100vh;
-    padding: 30px;
-}
-.all-content{
-    grid-area: 'all-content';
-    padding: 30px;
 }
 .card-tecnologies{
     width: 100%;
     justify-content: space-around;
-    background-color: var(--bg-cards);
 }
 .tecnologies{
     border-radius: 10px;
@@ -79,9 +79,9 @@ body{
 .tecnologies p{
     padding: 10px;
     border-radius: 10px;
-    background-color: #144372;
-    width: 30%;
+    background-color: var(--bg-techs);
     margin: 0 5px 0 5px;
+    color: black;
 }
 .tecnologies div{
     display: flex;
@@ -92,9 +92,6 @@ body{
     padding: 10px;
     margin: 10px 0 10px;
     border-radius: 10px;
-}
-.menu ul li:hover{
-    background-color: #144372;
 }
 .card-repositories div{
     background-color: var(--bg-cards);
@@ -115,7 +112,6 @@ body{
     padding: 20px;
 }
 .card-sobre-mim{
-    background-color: var(--bg-cards);
     padding: 20px;
     display: flex;
     border-radius: 10px;
@@ -127,4 +123,19 @@ body{
 }
 .card-sobre-mim div{
     margin-right: 20px;
+}
+.card-myprojects p a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.card-myprojects p a:hover{
+    color: var(--bg-techs);
+}
+.menu ul li:hover{
+    background-color: var(--bg-techs);
+    color: black;
+}
+.recent-posts:hover{
+    background-color: #568548;
+    color: black;
 }
