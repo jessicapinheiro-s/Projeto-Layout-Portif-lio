@@ -136,3 +136,7 @@ body{
     background-color: #568548;
     color: black;
 }
+.recent-posts:hover, .card-myprojects:hover  {
+    transform: scale(0.9);
+    transition: all 0.9s;
+}
