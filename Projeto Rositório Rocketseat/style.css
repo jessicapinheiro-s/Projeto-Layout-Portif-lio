@@ -58,7 +58,6 @@ body{
 .card-myprojects{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
 }   
 .card-myprojects, .recent-posts{
     margin-bottom: 20px;
@@ -97,7 +96,6 @@ body{
     background-color: var(--bg-cards);
     width: 45%;
     border-radius: 10px;
-    padding: 20px;
 }
 .card-repositories div h2{
     font-size: 1.150rem;
@@ -108,11 +106,10 @@ body{
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.recent-posts{
+.recent-posts, .card-sobre-mim, .card-repositories div, .card-myprojects{
     padding: 20px;
 }
 .card-sobre-mim{
-    padding: 20px;
     display: flex;
     border-radius: 10px;
 }
