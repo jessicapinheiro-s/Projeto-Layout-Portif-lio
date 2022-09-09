@@ -30,12 +30,12 @@ body{
     grid-template-rows: 300px, 500px, 200px;
 }
 .left-bar{
-    grid-area: 'left-bar';
+    grid-area: left-bar;
     height: 100vh;
     padding: 30px;
 }
 .all-content{
-    grid-area: 'all-content';
+    grid-area: all-content;
     padding: 30px;
 }
 .card-perfil, .card-side-menu, .card-tecnologies{
